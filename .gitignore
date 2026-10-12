@@ -52,3 +52,7 @@ web/sites/simpletest
 
 # SERVER.md not for current public repo
 SERVER.md
+
+# SASS CSS compiling done in CI pipeline, so we don't need to track the compiled CSS files in Git.
+web/themes/amitee_theme/css
+web/themes/amitee_theme/node_modules

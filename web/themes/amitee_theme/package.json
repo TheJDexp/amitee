@@ -1,0 +1,11 @@
+{
+  "name": "amitee-theme",
+  "private": true,
+  "scripts": {
+    "build": "sass --style=compressed --no-source-map scss:css",
+    "watch": "sass --watch scss:css"
+  },
+  "devDependencies": {
+    "sass": "^1.105.1"
+  }
+}
