@@ -1,0 +1,26 @@
+name: amitee_theme
+type: theme
+'base theme': false
+version: 1.0.0
+libraries:
+  - amitee_theme/base
+  - amitee_theme/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - amitee_theme/user
+  core/drupal.dropbutton:
+    - amitee_theme/dropbutton
+  core/drupal.dialog:
+    - amitee_theme/dialog
+  file/drupal.file:
+    - amitee_theme/file
+  core/drupal.item-list:
+    - amitee_theme/item-list
+  core/drupal.progress:
+    - amitee_theme/progress
+  core/drupal.tablesort:
+    - amitee_theme/drupal.tablesort
+description: ''
+core_version_requirement: ^11
+generator: 'starterkit_theme:11.4.8'
