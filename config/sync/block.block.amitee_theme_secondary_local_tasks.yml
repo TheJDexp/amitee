@@ -1,0 +1,22 @@
+uuid: 0887ef01-2c09-47ab-aca3-664536c09b01
+langcode: en
+status: true
+dependencies:
+  theme:
+    - amitee_theme
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: amitee_theme_secondary_local_tasks
+theme: amitee_theme
+region: highlighted
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }
