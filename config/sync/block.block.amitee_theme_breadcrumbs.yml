@@ -1,0 +1,22 @@
+uuid: cf93c13c-ae79-47a9-b3d3-625444e9c2c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - amitee_theme
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: amitee_theme_breadcrumbs
+theme: amitee_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }
