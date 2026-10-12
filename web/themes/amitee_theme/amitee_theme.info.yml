@@ -3,6 +3,7 @@ type: theme
 'base theme': false
 version: 1.0.0
 libraries:
+  - amitee_theme/global
   - amitee_theme/base
   - amitee_theme/messages
   - core/normalize
