@@ -13,11 +13,18 @@ A self-directed project with Drupal 11, headless architecture, and custom module
 
 ## Planned
 
+- [ ] CI CSS compilation
 - [ ] Content types: **Employee** and **Event** (an event records a conflict and its history)
 - [ ] Custom module that outputs an event and its history as JSON
 - [ ] Connection from that module to an AI API
 - [ ] React front end consuming Drupal's API (headless)
 - [ ] Accessibility pass (WCAG) on the front end
+
+## Future scope
+
+- [ ] Create personnality test webform
+- [ ] Views/Dashboard for HR personel
+- [ ] Automatic Employee webform link to employee email upon Employee content creation
 
 ## Stack
 
@@ -39,6 +46,25 @@ ddev start
 ddev composer install
 ddev drush config:import -y
 ddev launch
+```
+
+`settings.php` and `sites/default/files` are not in git. Each environment
+has its own, which keeps credentials out of the repository.
+
+## Pulling the live database locally
+
+A custom DDEV provider (`.ddev/providers/droplet.yaml`) pulls a fresh dump
+from the server.
+
+```bash
+ddev auth ssh                # once per session
+```
+
+```bash
+ddev drush cex -y            # export local config first
+ddev snapshot --name pre-pull #### BACKUP LOCAL DATABASE ####
+ddev pull droplet --skip-files -y
+ddev drush deploy -y
 ```
 
 ## Known limitations

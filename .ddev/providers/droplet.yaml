@@ -1,0 +1,23 @@
+auth_command:
+  command: |
+    set -eu -o pipefail
+    ssh-add -l >/dev/null || (echo "No SSH key loaded. Run 'ddev auth ssh' first." && exit 1)
+  service: web
+
+db_pull_command:
+  command: |
+    set -eu -o pipefail
+    mkdir -p /var/www/html/.ddev/.downloads
+    ssh -o StrictHostKeyChecking=accept-new deploy@68.183.206.37 \
+      "cd /var/www/drupal && vendor/bin/drush sql:dump --structure-tables-key=common | gzip" \
+      > /var/www/html/.ddev/.downloads/db.sql.gz
+  service: web
+
+files_pull_command:
+  command: |
+    set -eu -o pipefail
+    mkdir -p /var/www/html/.ddev/.downloads/files
+    rsync -az --delete -e "ssh -o StrictHostKeyChecking=accept-new" \
+      deploy@68.183.206.37:/var/www/drupal/web/sites/default/files/ \
+      /var/www/html/.ddev/.downloads/files/
+  service: web
