@@ -49,3 +49,6 @@ web/sites/simpletest
 
 # Ignore multi-site test environment.
 # simpletest
+
+# SERVER.md not for current public repo
+SERVER.md
