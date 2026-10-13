@@ -1,0 +1,9 @@
+uuid: c90efd33-b8c5-4c44-a415-914f76deb09a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Primary DISC style'
+vid: primary_disc_style
+description: null
+weight: 0
+new_revision: false

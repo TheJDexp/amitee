@@ -1,0 +1,9 @@
+uuid: ea02fcb4-a725-4a20-acb8-28633c981f1e
+langcode: en
+status: true
+dependencies: {  }
+name: 'DISC Communication Style'
+vid: disc_communication_style
+description: null
+weight: 0
+new_revision: false

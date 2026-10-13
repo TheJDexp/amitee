@@ -1,0 +1,9 @@
+uuid: df904f53-1b16-4dae-98b6-82aaddf992fa
+langcode: en
+status: true
+dependencies: {  }
+name: 'DISC Decision-making'
+vid: disc_decision_making
+description: null
+weight: 0
+new_revision: false
