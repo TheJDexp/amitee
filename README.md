@@ -13,7 +13,7 @@ A self-directed project with Drupal 11, headless architecture, and custom module
 
 ## Planned
 
-- [ ] CI CSS compilation
+- [X] CI CSS compilation
 - [ ] Content types: **Employee** and **Event** (an event records a conflict and its history)
 - [ ] Custom module that outputs an event and its history as JSON
 - [ ] Connection from that module to an AI API
@@ -63,6 +63,7 @@ ddev auth ssh                # once per session
 ```bash
 ddev drush cex -y            # export local config first
 ddev snapshot --name pre-pull #### BACKUP LOCAL DATABASE ####
+ddev auth ssh
 ddev pull droplet --skip-files -y
 ddev drush deploy -y
 ```
