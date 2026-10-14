@@ -4,6 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_disc_communication_style
+    - field.field.user.user.field_disc_decision_making
+    - field.field.user.user.field_disc_main_motivation
+    - field.field.user.user.field_email
+    - field.field.user.user.field_primary_disc_style
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -28,4 +33,9 @@ content:
     weight: 0
     region: content
 hidden:
+  field_disc_communication_style: true
+  field_disc_decision_making: true
+  field_disc_main_motivation: true
+  field_email: true
+  field_primary_disc_style: true
   member_for: true

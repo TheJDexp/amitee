@@ -1,0 +1,30 @@
+uuid: 914b7b19-2669-443e-86cb-b63c0b6c2a1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_disc_decision_making
+    - taxonomy.vocabulary.disc_decision_making
+  module:
+    - user
+id: user.user.field_disc_decision_making
+field_name: field_disc_decision_making
+entity_type: user
+bundle: user
+label: 'DISC Decision-making'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      disc_decision_making: disc_decision_making
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,30 @@
+uuid: d47f872e-7a8b-4b36-a43f-df72850703c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_disc_main_motivation
+    - taxonomy.vocabulary.disc_communication_style
+  module:
+    - user
+id: user.user.field_disc_main_motivation
+field_name: field_disc_main_motivation
+entity_type: user
+bundle: user
+label: 'DISC Main motivation'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      disc_communication_style: disc_communication_style
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
