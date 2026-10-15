@@ -21,6 +21,7 @@
         "drupal/core-recipe-unpack": "^11.4",
         "drupal/core-recommended": "^11.4",
         "drupal/entity": "^1.8",
+        "drupal/token": "^1.17",
         "drush/drush": "^13.8"
     },
     "conflict": {
