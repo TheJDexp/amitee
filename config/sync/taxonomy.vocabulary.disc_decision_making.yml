@@ -5,5 +5,5 @@ dependencies: {  }
 name: 'DISC Decision-making'
 vid: disc_decision_making
 description: null
-weight: 0
+weight: -8
 new_revision: false
