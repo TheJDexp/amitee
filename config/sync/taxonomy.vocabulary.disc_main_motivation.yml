@@ -5,5 +5,5 @@ dependencies: {  }
 name: 'DISC Main motivation'
 vid: disc_main_motivation
 description: null
-weight: 0
+weight: -7
 new_revision: false

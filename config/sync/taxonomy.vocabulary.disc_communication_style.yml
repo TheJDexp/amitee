@@ -5,5 +5,5 @@ dependencies: {  }
 name: 'DISC Communication Style'
 vid: disc_communication_style
 description: null
-weight: 0
+weight: -9
 new_revision: false

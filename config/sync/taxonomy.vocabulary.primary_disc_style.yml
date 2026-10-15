@@ -5,5 +5,5 @@ dependencies: {  }
 name: 'Primary DISC style'
 vid: primary_disc_style
 description: null
-weight: 0
+weight: -10
 new_revision: false
